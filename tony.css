@@ -1,0 +1,15 @@
+.nom{
+    background-color: black;
+    color: white;
+    border: none;
+    position: absolute; bottom: 0;
+}
+
+.signet{
+    width: 300px;
+}
+
+.pic1{
+    width: 800px;
+}
+
