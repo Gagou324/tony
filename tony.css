@@ -1,0 +1,105 @@
+body{
+    background-color: black;
+  }
+  .apercu{
+    display: flex;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .conteneur{
+    flex: 33.33%;
+    max-width: 600px;
+    margin: 50;
+    padding: 4px;
+  }
+
+  @keyframes fondu{
+    0%{background-image: url("pics/pic1.jpg");}
+    33.33%{background-image: url("pics/pic2.jpg");}
+    66.67%{background-image: url("pics/pic3.jpg");}
+    100%{background-image: url("pics/pic1.jpg");}
+  }
+
+  @keyframes fonduPortraits{
+    0%{background-image: url("pics/portrai1.JPG");}
+    25%{background-image: url("pics/portrait2.JPG");}
+    50%{background-image: url("pics/portrait3.JPG");}
+    75%{background-image: url("pics/portrait4.JPG");}
+    100%{background-image: url("pics/portrai1.JPG");}
+  }
+  @keyframes fonduritz{
+    0%{background-image: url("pics/train_1.JPG");}
+    25%{background-image: url("pics/train_2.JPG");}
+    50%{background-image: url("pics/train_3.JPG");}
+    75%{background-image: url("pics/train_4.JPG");}
+    100%{background-image: url("pics/train_1.JPG");}
+  }
+
+  .diapo{
+    width: 100%;
+    height: 0px;
+    padding-top: 66.55%;
+    background-size: contain;
+    animation: fondu 12s ease-in-out infinite both;
+  }
+
+  .diapo:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+    opacity: 80%;
+  }
+  .diapo:active{
+    opacity: 50%;
+  }
+
+  .diapoPortraits{
+    width: 100%;
+    height: 0px;
+    padding-top: 66.55%;
+    background-size: contain;
+    animation: fonduPortraits 12s ease-in-out infinite both;
+    transition: opacity 0.15s;
+  }
+  .diapoPortraits:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+    opacity: 80%;
+  }
+  .diapoPortraits:active{
+    opacity: 50%;
+  }
+
+  .diapoRitz{
+    width: 100%;
+    height: 0px;
+    padding-top: 66.55%;
+    background-size: contain;
+    animation: fonduritz 12s ease-in-out infinite both;
+    transition: opacity 0.15s;
+  }
+  .diapoRitz:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+    opacity: 80%;
+  }
+  .diapoRitz:active{
+    opacity: 50%;
+  }
+
+  .enbas{
+    bottom: 0; 
+    left: 0; 
+    width: 100%;
+  }
+
+  .signet{
+    width: 17%;
+  }
+  .texte{
+    color: white;
+    margin: 0px;
+    text-align: right;
+    padding-right: 5px;
+    opacity: 50%;
+  }
